@@ -1,0 +1,5 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/azown/public_html/surprisecar
+    - /bin/cp * $DEPLOYPATH
+    
