@@ -1,0 +1,205 @@
+/* General styling */
+.info {
+    text-align: center;
+    padding: 30px;
+    font-family: 'Arial', sans-serif;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    width: 400px;
+    margin: 30px auto;
+    background: linear-gradient(135deg, #f9f9f9, #ececec);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.logo-div {
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
+.logo-div img {
+    max-width: 160px;
+    height: auto;
+    border-radius: 12px;
+    padding: 5px;
+    transition: transform 0.3s ease-in-out;
+    animation: zoomIn 1.2s ease-in-out;
+}
+
+.logo-div img:hover {
+    transform: scale(1.2);
+}
+
+.profile img {
+    border-radius: 50%;
+    max-width: 130px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    padding: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.profile img:hover {
+    transform: scale(1.15);
+}
+
+.name {
+    font-size: 2rem;
+    margin-top: 15px;
+    display: grid;
+    padding-bottom: 1px;
+    transition: transform 0.3s ease-in-out;
+    animation: fadeInRight 1.3s ease-in-out;
+    color: #333;
+}
+
+.name:hover {
+    transform: scale(1.1);
+}
+
+.dev {
+    font-size: 1.4rem;
+    color: #666;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+    display: grid;
+    margin-top: -20px;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    animation: fadeInLeft 1.3s ease-in-out;
+}
+
+.dev:hover {
+    transform: scale(1.1);
+}
+
+.contact-details {
+    text-align: left;
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #fff;
+    animation: fadeInUp 1.5s ease-in-out;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details p {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    font-size: 1.2rem;
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+.contact-icon {
+    margin-right: 12px;
+    font-size: 1.4rem;
+    color: #000000;
+}
+
+.contact-details a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Social Media Tags */
+.tags {
+    margin-top: 30px;
+}
+
+.tags .fa {
+    margin: 12px;
+    padding: 12px;
+    font-size: 24px;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    border: 2px solid #ddd;
+    animation: fadeIn 1.8s ease-in-out;
+}
+
+.tags .fa:hover {
+    transform: rotate(360deg);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tags .fa-facebook {
+    background: #3b5998;
+    color: white;
+}
+
+.tags .fa-instagram {
+    background: #C13584;
+    color: white;
+}
+
+.tags .fa-youtube {
+    background: #FF0000; /* YouTube's red color */
+    color: white;
+}
+/* Keyframe Animations */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        transform: translateX(40px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
